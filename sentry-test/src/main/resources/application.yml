@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: sentry-test
+
+sentry:
+  enable-tracing: true            # To get started automatically sending traces
+  traces-sample-rate: 0.3         # Set a uniform sample rate for all transactions
+  logging:
+    enabled: false                # turned off SentryAppender auto-configuration
+    minimum-breadcrumb-level: info  # info or higher to include a log message as breadcrumb.
+    minimum-event-level: info       # info or higher will send an event to Sentry.
+  dsn: https://057f18b5f36e4be890c1201aa59c3e8a@o485183.ingest.sentry.io/5539959

@@ -21,6 +21,7 @@
 
     <modules>
         <module>book-common</module>
+        <module>sentry-test</module>
     </modules>
 
 
